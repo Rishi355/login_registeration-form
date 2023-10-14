@@ -6,8 +6,8 @@ const app = express();
 const bcrypt = require('bcrypt');
 const jsonwt = require("jsonwebtoken");
 const router = express.Router();
-const key = require("./.env/url")
-const db = require('./.env/url').mongoURL;
+const key = require("./secret/myurl")
+const db = require('./secret/myurl').mongoURL;
 //Attempt to connect to database
 mongoose
   .connect(db)
